@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Bus Details</h1>
+<br>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Bus_ID</th>
+        <th scope="col">Source</th>
+        <th scope="col">Destination</th>
+        <th scope="col">Capacity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Duration</th>
+    </tr>
+     </thead>
+    {% for bus in busDetails %}
+    <tr>
+        <td>{{bus[0]}}</td>
+        <td>{{bus[1]}}</td>
+        <td>{{bus[2]}}</td>
+        <td>{{bus[3]}}</td>
+        <td>{{bus[4]}}</td>
+        <td>{{bus[5]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+ <button onclick="location.href = 'home'" id="myButton" class="float-left submit-button" >Home</button>
+{% endblock %}

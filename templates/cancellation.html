@@ -1,0 +1,35 @@
+{% extends "base_user.html" %}
+{% block content %}
+
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-
+        scale=1">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-
+        awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/index.css">
+    </head>
+    <body>
+        <h1><center>Cancel your book</center></h1>
+        <form class="example" method="post" action="/cancellation_user"
+         style="margin:auto;max-width:600px">
+
+            <div class="form-group">
+<label for="cancel_busid">Enter the Bus_ID that you want to cancel your tickets from </label>
+<input type="number" class="form-control" name="cancel_busid" id="cancel_busid">
+</div>
+<br>
+            <div class="form-group">
+
+<label for="datee">Enter the date that you have a booking for</label>
+<input type="date" class="form-control" name="datee" id="datee">
+</div>
+<br>
+            <button type="submit" class="btn btn-danger btn-sm btn-block">Cancel my booking</button>
+        </form>
+
+
+    </body>
+
+{% endblock %}

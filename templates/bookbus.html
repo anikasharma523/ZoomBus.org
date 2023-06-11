@@ -1,0 +1,42 @@
+{% extends "base_user.html" %}
+{% block content %}
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-
+        scale=1">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-
+        awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/index.css">
+    </head>
+    <body>
+    <br>
+    <br>
+        <h1><center>Book Bus</center></h1>
+        <form class="example" method="post" action="/bookbus"
+         style="margin:auto;max-width:600px">
+            <div class="form-group">
+<label for="busid">Enter Bus_ID</label>
+<input type="text" class="form-control" name="busid" id="busid">
+</div>
+<br>
+<div class="form-group">
+<label for="tickets">Enter number of tickets needed</label>
+<input type="text" class="form-control" name="tickets" id="tickets">
+</div>
+<br>
+            <div class="form-group">
+<label for="datetravel">Date of Travel</label>
+<input type="date" class="form-control" name="datetravel" id="datetravel">
+
+                <label for="user_confirm">Enter Email for confirmation</label>
+<input type="email" class="form-control" name="user_confirm" id="user_confirm">
+</div>
+
+<button type="submit" class="btn btn-danger btn-sm btn-block">Book my bus</button>
+        </form>
+<br>
+    <br>
+    </body>
+
+{% endblock %}

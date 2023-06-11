@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+ <link href="static/css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<p><h5>HPM - Highest Performing Month &emsp; || &emsp; LPM - Lowest Performing Month &emsp; || &emsp; MBT - Most booked Ticket</h5></p>
+
+<div class="price_table_f">
+  <div class="package package_free">
+    <h2 class="yes">2019</h2>
+    <div class="price_f">Rs.avg /year</div>
+    <p>How did the year do?</p>
+      <table class="table table-striped">
+     <tr>
+      <th scope="col">HPM</th>
+      <th scope="col">LPM</th>
+      <th scope="col">MBT</th>
+    </tr>
+      </table>
+    <button>REVENUE</button>
+  </div>
+  <div class="package package_free">
+    <h2 class="yes">2020</h2>
+    <div class="price_f">Rs.avg /year</div>
+    <p>How did the year do?</p>
+      <table class="table table-striped">
+     <tr>
+      <th scope="col">HPM</th>
+      <th scope="col">LPM</th>
+      <th scope="col">MBT</th>
+    </tr>
+      </table>
+    <button>REVENUE</button>
+  </div>
+  <div class="package package_free">
+    <h2 class="yes">2021</h2>
+    <div class="price_f">Rs.avg /year</div>
+    <p>How did the year do?</p>
+      <table class="table table-striped">
+     <tr>
+      <th scope="col">HPM</th>
+      <th scope="col">LPM</th>
+      <th scope="col">MBT</th>
+    </tr>
+      </table>
+    <button>REVENUE</button>
+  </div>
+  <div class="package package_free">
+    <h2 class="yes">2022</h2>
+    <div class="price_f">Rs.avg /year</div>
+    <p>How did the year do?</p>
+      <table class="table table-striped">
+     <tr>
+      <th scope="col">HPM</th>
+      <th scope="col">LPM</th>
+      <th scope="col">MBT</th>
+    </tr>
+      </table>
+    <button>REVENUE</button>
+  </div>
+</div>
+
+<br>
+<br>
+<h3>Max Bookings</h3>
+<table>
+    <thead>
+    <tr>
+      <th scope="col">Year</th>
+      <th scope="col">Count</th>
+    </tr>
+  </thead>
+            <tr>
+                <td>{{data[0][0]}}</td>
+                <td>{{data[0][1]}}</td>
+                </br>
+            </tr>
+        </table>
+<br>
+
+<h4>Max Bus Booked</h4>
+{{data[1][0]}}
+
+<h4>From where to where</h4>
+{{data[2][0]}} to {{data[2][1]}}
+
+<br>
+<br>
+
+</head>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+ <!-- bus section -->
+{% block content %}
+  <h1>Bus Add/Delete</h1>
+    <br>
+    <h1>Diver Add</h1>
+    <br>
+    <form method="POST" action="">
+        Name<input type="text", name="driver_name">
+        <br>
+        Email<input type="email", name="driver_email">
+        <br>
+        Phone Number<input type="number", name="driver_phone">
+        <br>
+        Bus ID<input type="number", name="bus_id">
+        <input type="submit">
+    </form>
+<button onclick="location.href = 'home'" id="myButton" class="float-left submit-button" >Home</button>
+  <!-- end bus section -->
+
+{% endblock %}
+
+

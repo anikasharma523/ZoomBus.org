@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Details of Users Registered on Site</h1>
+<br>
+<table border=1 >
+    <tr>
+        <th>User_ID</th>
+        <th>Name</th>
+        <th>Email Id</th>
+    </tr>
+    {% for user in userDetails %}
+    <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+        <td>{{user[2]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<button onclick="location.href = 'home'" id="myButton" class="float-left submit-button" >Home</button>
+{% endblock %}

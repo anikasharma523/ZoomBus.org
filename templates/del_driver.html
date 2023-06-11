@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+ <!-- bus section -->
+{% block content %}
+  <body>
+  <br><br>
+        <h1><center>Delete a driver</center></h1>
+        <form class="example" method="post" action="/del_driver"
+         style="margin:auto;max-width:600px">
+
+            <div class="form-group">
+<label for="driver_id">Enter the Driver_ID to be deleted </label>
+<input type="number" class="form-control" name="driver_id" id="driver_id">
+</div>
+<br>
+
+<br>
+            <button type="submit" class="btn btn-danger btn-sm btn-block">Delete driver</button>
+        </form>
+
+
+    </body>
+
+<br><br>
+<button onclick="location.href = 'home'" id="myButton" class="float-left submit-button" >Home</button>
+  <!-- end bus section -->
+
+{% endblock %}
+
+

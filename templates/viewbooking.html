@@ -1,0 +1,48 @@
+{% extends "base_user.html" %}
+{% block content %}
+
+<body>
+        <h1><center>View your bookings up till now</center></h1>
+        <form class="example" method="post" action="/viewbooking"
+         style="margin:auto;max-width:600px">
+            <div class="form-group">
+
+<label for="viewbooking">Enter your email(for confirmation)</label>
+<input type="text" class="form-control" name="viewbooking" id="viewbooking">
+</div>
+<br>
+
+<button type="submit" class="btn btn-danger btn-sm btn-block">View</button>
+        </form>
+            <br>
+    <h3><b>Bookings in the Past</b></h3>
+    <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Book_ID</th>
+      <th scope="col">Email</th>
+      <th scope="col">Bus_ID</th>
+      <th scope="col">Date Booking</th>
+      <th scope="col">Time of Booking</th>
+        <th scope="col">Date for</th>
+        <th scope="col">Amount of Seats booked</th>
+    </tr>
+  </thead>
+        {% for item in data %}
+            <tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+                <td>{{item[5]}}</td>
+                <td>{{item[6]}}</td>
+                <td>{{item[7]}}</td>
+
+                </br>
+            </tr>
+        {% endfor %}
+        </table>
+   </body>
+
+{% endblock %}

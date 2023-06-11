@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Bus Add/Delete</h1>
+    <br>
+    <form method="POST" action="">
+        <label>Source:</label>
+        <select name="source">
+            <option value="jaipur">Jaipur</option>
+            <option value="dharamshala">Dharamshala</option>
+            <option value="trichi">Trichi</option>
+            <option value="shimla">Shimla</option>
+        </select>
+        <br>
+        <label>Destination:</label>
+        <select name="destination">
+            <option value="jaipur">Jaipur</option>
+            <option value="dharamshala">Dharamshala</option>
+            <option value="trichi">Trichi</option>
+            <option value="shimla">Shimla</option>
+        </select>
+        <br>
+        Capacity<input type="number", name="capacity">
+        <br>
+        Price<input type="number", name="price">
+        <br>
+        Duration<input type="time", name="duration">
+        <input type="submit">
+    </form>
+  <!-- end bus section -->
+<button onclick="location.href = 'home'" id="myButton" class="float-left submit-button" >Home</button>
+{% endblock %}
+

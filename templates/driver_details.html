@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Driver Details</h1>
+<br>
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Driver_ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Bus Driven</th>
+    </tr>
+  </thead>
+    {% for driver in driverDetails %}
+    <tr>
+        <td>{{driver[0]}}</td>
+        <td>{{driver[1]}}</td>
+        <td>{{driver[2]}}</td>
+        <td>{{driver[3]}}</td>
+        <td>{{driver[4]}}</td>
+        <td>{{driver[5]}}</td>
+    </tr>
+    {% endfor %}
+    <button onclick="location.href = 'home'" id="myButton" class="float-left submit-button" >Home</button>
+</table>
+{% endblock %}

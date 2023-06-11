@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<br>
+<br>
+
+  <h1><center>Delete a bus</center></h1>
+<br>
+        <form class="example" method="post" action="/delete_bus"
+         style="margin:auto;max-width:600px">
+
+            <div class="form-group">
+<label for="busid">Enter the Bus_ID to be deleted </label>
+<input type="number" class="form-control" name="busid" id="busid">
+</div>
+<br>
+
+<br>
+            <button type="submit" class="btn btn-danger btn-sm btn-block">Delete bus</button>
+        </form> <br><br>
+  <!-- end bus section -->
+<button onclick="location.href = 'home'" id="myButton" class="float-left submit-button" >Home</button>
+{% endblock %}
+
