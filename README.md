@@ -7,8 +7,6 @@ accessed. It makes it difficult to keep track of the number of buses, drivers, a
 designed a web-application that eases out the whole process. Moreover, our web-app displays all 
 the statistics on the admin for the improvement of business. 
 
-Code Style: Standard
-
 Tech/Framework used: 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Frontend: HTML, CSS, Bootstrap
